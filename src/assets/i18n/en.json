@@ -1,0 +1,10 @@
+{
+  "i18n": {
+    "top-bar": {
+      "title": "My Store",
+      "title.title": "{{name}} Store"
+    },
+    "title": "My Store",
+    "title.title": "{{name}} Store"
+  }
+}

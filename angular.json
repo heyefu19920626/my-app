@@ -31,6 +31,12 @@
       },
       "root": "",
       "sourceRoot": "src",
+      "i18n": {
+        "sourceLocale": "en-US",
+        "locales": {
+          "en": "src/locale/messages.en.xlf"
+        }
+      },
       "prefix": "app",
       "architect": {
         "build": {

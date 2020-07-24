@@ -1,5 +1,9 @@
 <a [routerLink]="['/']">
-    <h1>My Store</h1>
+    <h1 title="{{'i18n.top-bar.title'|translate:{name: name } }}" i18n-title
+        i18n="site_title|网站标题">{{'i18n.top-bar.title' | translate}}</h1>
 </a>
 
+<a class="button fancy-button">{{'i18n.title' | translate}}</a>
+<a class="button fancy-button" (click)="changeLanguage.emit('zh')">中文</a>
+<a class="button fancy-button" (click)="changeLanguage.emit('en')">English</a>
 <a class="button fancy-button" routerLink="/cart"><i class="material-icons">shopping_cart</i>Checkout</a>

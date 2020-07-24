@@ -1,22 +1,17 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, EventEmitter, OnInit, Output} from '@angular/core';
 
 @Component({
-  selector: 'app-top-bar',
-  templateUrl: './top-bar.component.html',
-  styleUrls: ['./top-bar.component.css']
+    selector: 'app-top-bar',
+    templateUrl: './top-bar.component.html',
+    styleUrls: ['./top-bar.component.css']
 })
 export class TopBarComponent implements OnInit {
+    @Output() changeLanguage = new EventEmitter();
+    name = 'heyefu';
 
-  constructor() { }
+    constructor() {
+    }
 
-  ngOnInit() {
-  }
-
+    ngOnInit() {
+    }
 }
-
-
-/*
-Copyright Google LLC. All Rights Reserved.
-Use of this source code is governed by an MIT-style license that
-can be found in the LICENSE file at http://angular.io/license
-*/
