@@ -106,4 +106,4 @@ dist
 .tern-port
 .idea
 package-lock.json
-
+*.spec.ts

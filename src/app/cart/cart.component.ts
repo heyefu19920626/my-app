@@ -1,6 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {CartService} from "../cart.service";
 import {FormBuilder} from "@angular/forms";
+import {Validators} from "@angular/forms";
 
 @Component({
     selector: 'app-cart',
@@ -16,7 +17,7 @@ export class CartComponent implements OnInit {
         private cartService: CartService
     ) {
         this.checkoutForm = this.formBuilder.group({
-            name: '',
+            name: ['',Validators.required],
             address: ''
         });
     }

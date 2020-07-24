@@ -12,7 +12,8 @@
 <form [formGroup]="checkoutForm" (ngSubmit)="onSubmit(checkoutForm.value)">
     <div>
         <label>Name</label>
-        <input id="name" type="text" formControlName="name">
+        <input id="name" [(ngModel)]="checkoutForm.name" name="name" required minlength="4" type="text"
+               formControlName="name">
     </div>
     <div>
         <label>Address</label>
