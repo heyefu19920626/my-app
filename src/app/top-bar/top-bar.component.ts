@@ -1,4 +1,5 @@
-import {Component, EventEmitter, OnInit, Output} from '@angular/core';
+import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
+import {TranslateService} from "@ngx-translate/core";
 
 @Component({
     selector: 'app-top-bar',
@@ -7,7 +8,7 @@ import {Component, EventEmitter, OnInit, Output} from '@angular/core';
 })
 export class TopBarComponent implements OnInit {
     @Output() changeLanguage = new EventEmitter();
-    name = 'heyefu';
+    @Input() name;
 
     constructor() {
     }

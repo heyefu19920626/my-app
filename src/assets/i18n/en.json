@@ -4,6 +4,9 @@
       "title": "My Store",
       "title.title": "{{name}} Store"
     },
+    "heyefu": {
+      "name": "heyefu"
+    },
     "title": "My Store",
     "title.title": "{{name}} Store"
   }

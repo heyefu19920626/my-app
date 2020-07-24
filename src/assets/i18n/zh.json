@@ -4,6 +4,9 @@
       "title": "我的商店",
       "title.title": "{{name}}的店"
     },
+    "heyefu": {
+      "name": "何野夫"
+    },
     "title": "我的应用商店",
     "title.title": "{{name}}的商店"
   }
