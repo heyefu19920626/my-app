@@ -15,6 +15,10 @@ import {TranslateLoader, TranslateModule} from "@ngx-translate/core";
 import {TranslateHttpLoader} from "@ngx-translate/http-loader";
 import {HttpClient, HttpClientModule} from "@angular/common/http";
 import {HeroFormTempleteComponent} from './hero-form-templete/hero-form-templete.component';
+import {HeroFormReactiveComponent} from './hero-form-reactive/hero-form-reactive.component';
+import {ForbiddenValidatorDirective} from "./shared/forbidden-name-directive";
+import {IdentityRevealedValidatorDirective} from "./shared/identity-revealed.directive";
+import {UniqueAlterEgoValidatorDirective} from "./shared/alter-ego.directive";
 
 
 @NgModule({
@@ -46,7 +50,11 @@ import {HeroFormTempleteComponent} from './hero-form-templete/hero-form-templete
         ProductDetailsComponent,
         CartComponent,
         ShippingComponent,
-        HeroFormTempleteComponent
+        HeroFormTempleteComponent,
+        HeroFormReactiveComponent,
+        ForbiddenValidatorDirective,
+        IdentityRevealedValidatorDirective,
+        UniqueAlterEgoValidatorDirective
     ],
     bootstrap: [AppComponent]
 })
