@@ -14,7 +14,7 @@ import {ShippingComponent} from './shipping/shipping.component';
 import {TranslateLoader, TranslateModule} from "@ngx-translate/core";
 import {TranslateHttpLoader} from "@ngx-translate/http-loader";
 import {HttpClient, HttpClientModule} from "@angular/common/http";
-import {HeroFormTempleteComponent} from './hero-form-templete/hero-form-templete.component';
+import {HeroFormTemplateComponent} from './hero-form-templete/hero-form-template.component';
 import {HeroFormReactiveComponent} from './hero-form-reactive/hero-form-reactive.component';
 import {ForbiddenValidatorDirective} from "./shared/forbidden-name-directive";
 import {IdentityRevealedValidatorDirective} from "./shared/identity-revealed.directive";
@@ -50,7 +50,7 @@ import {UniqueAlterEgoValidatorDirective} from "./shared/alter-ego.directive";
         ProductDetailsComponent,
         CartComponent,
         ShippingComponent,
-        HeroFormTempleteComponent,
+        HeroFormTemplateComponent,
         HeroFormReactiveComponent,
         ForbiddenValidatorDirective,
         IdentityRevealedValidatorDirective,

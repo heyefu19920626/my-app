@@ -10,14 +10,14 @@
 </div>
 
 <form [formGroup]="checkoutForm" (ngSubmit)="onSubmit(checkoutForm.value)">
-    <div>
-        <label>Name</label>
-        <input id="name" [(ngModel)]="checkoutForm.name" name="name" required minlength="4" type="text"
-               formControlName="name">
+    <div class="form-group">
+        <label for="name">Name</label>
+        <input class="form-control" id="name" type="text" formControlName="name">
+        <div *ngIf="formErrors.username" class="show alert alert-danger">{{formErrors.username}}</div>
     </div>
-    <div>
-        <label>Address</label>
-        <input id="address" type="text" formControlName="address">
+    <div class="form-group">
+        <label for="address">Address</label>
+        <input class="form-control" id="address" type="text" formControlName="address">
     </div>
     <button class="button" type="submit">Purchase</button>
 </form>
