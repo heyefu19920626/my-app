@@ -12,12 +12,22 @@
 <form [formGroup]="checkoutForm" (ngSubmit)="onSubmit(checkoutForm.value)">
     <div class="form-group">
         <label for="name">Name</label>
-        <input class="form-control" id="name" type="text" formControlName="name">
-        <div *ngIf="formErrors.username" class="show alert alert-danger">{{formErrors.username}}</div>
+        <input class="form-control" id="name" type="text" formControlName="name" required minlength="5">
+        <div *ngIf="name.invalid && (name.dirty || name.touched)" class="alert-danger alert">
+            <div *ngIf="name.errors.required">
+                Name is Required.
+            </div>
+            <div *ngIf="name.errors.minlength">
+                Name must be at least 5 characters long.
+            </div>
+            <div *ngIf="name.errors.forbiddenName">
+                Name cannot be Bob.
+            </div>
+        </div>
     </div>
     <div class="form-group">
         <label for="address">Address</label>
         <input class="form-control" id="address" type="text" formControlName="address">
     </div>
-    <button class="button" type="submit">Purchase</button>
+    <button class="button" [disabled]="checkoutForm.invalid" type="submit">Purchase</button>
 </form>
